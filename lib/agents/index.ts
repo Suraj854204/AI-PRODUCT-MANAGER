@@ -126,7 +126,7 @@ Identify 4-5 real, specific competitors with accurate names. Be specific with
 market size figures and cite realistic growth rates. Include 4-6 trends,
 4-6 opportunities, and 3-5 threats.`;
 
-  return callAgent<ResearchAgentResult>(system, userPrompt, 4096);
+  return callAgent<ResearchAgentResult>(system, userPrompt)
 }
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -200,7 +200,7 @@ Include a minimum of 8 features with sequential ids (F001, F002, ...),
 realistic priority and effort ratings, and 2-4 acceptance criteria each.
 Include 4-6 success metrics.`;
 
-  return callAgent<PRDAgentResult>(system, userPrompt, 5120);
+  return callAgent<PRDAgentResult>(system, userPrompt);
 }
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -262,7 +262,7 @@ Create 4-5 epics, each with 4-6 stories. Use Fibonacci-like story points
 (1, 2, 3, 5, 8, 13). Compute totalStories and totalPoints accurately as the
 sum across all epics.`;
 
-  return callAgent<StoriesAgentResult>(system, userPrompt, 5120);
+  return callAgent<StoriesAgentResult>(system, userPrompt);
 }
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -315,7 +315,7 @@ Always produce exactly 4 phases. Phase 1 must have status "active"; phases
 per phase (e.g. indigo, cyan, purple, emerald tones). Each phase should
 reference 3-6 features by name from the FEATURES list where relevant.`;
 
-  return callAgent<RoadmapAgentResult>(system, userPrompt, 4096);
+  return callAgent<RoadmapAgentResult>(system, userPrompt);
 }
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -369,7 +369,7 @@ Year 3) with realistic, gradually increasing revenue (in INR), user counts,
 and MRR (monthly recurring revenue, also in INR) figures as raw numbers
 (no currency symbols or commas). Include 4-6 growth channels.`;
 
-  return callAgent<MarketAgentResult>(system, userPrompt, 3072);
+  return callAgent<MarketAgentResult>(system, userPrompt);
 }
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -421,7 +421,7 @@ Always create exactly 3 distinct personas with varied demographics, roles,
 and tech-savviness levels relevant to this product. Include 3-4 pain
 points and 3-4 goals per persona.`;
 
-  return callAgent<PersonaAgentResult>(system, userPrompt, 3072);
+  return callAgent<PersonaAgentResult>(system, userPrompt);
 }
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -471,5 +471,5 @@ financial, operational, legal). probability and impact are integers from
 (higher = riskier), derived from the severity and probability/impact of
 the listed risks.`;
 
-  return callAgent<RiskAgentResult>(system, userPrompt, 4096);
+  return callAgent<RiskAgentResult>(system, userPrompt);
 }

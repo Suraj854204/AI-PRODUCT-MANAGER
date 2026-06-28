@@ -18,7 +18,7 @@ strategy — streamed live to the browser and persisted to Postgres.
 
 - Next.js 14 (App Router) + TypeScript
 - Neon Postgres + Prisma ORM
-- Claude AI (`@anthropic-ai/sdk`, model `claude-sonnet-4-6`)
+- google Gemini (`@googlegemini, model `model 2.5`)
 - Custom JWT auth (`jose` + `bcryptjs`, http-only cookies)
 - Tailwind CSS + Framer Motion
 - Server-Sent Events for live agent streaming
