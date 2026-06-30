@@ -29,7 +29,7 @@ strategy — streamed live to the browser and persisted to Postgres.
 npm install
 
 cp .env.example .env.local
-# fill in DATABASE_URL, DIRECT_URL, ANTHROPIC_API_KEY, NEXTAUTH_SECRET
+# fill in DATABASE_URL, DIRECT_URL, GIMINI_KEY, NEXTAUTH_SECRET
 
 npx prisma generate
 npx prisma db push
@@ -45,7 +45,7 @@ Open http://localhost:3000.
 |---|---|
 | `DATABASE_URL` | Neon pooled Postgres connection string |
 | `DIRECT_URL` | Neon direct (non-pooled) connection string, used for migrations |
-| `ANTHROPIC_API_KEY` | Claude API key from console.anthropic.com |
+| `GEMINI_API_KEY.
 | `NEXTAUTH_SECRET` | Random string, 32+ characters, used to sign JWTs |
 | `NEXTAUTH_URL` | App URL (e.g. `http://localhost:3000`) |
 | `NEXT_PUBLIC_APP_URL` | Public-facing app URL |
