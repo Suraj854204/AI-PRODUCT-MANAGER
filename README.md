@@ -37,7 +37,7 @@ npx prisma db push
 npm run dev
 ```
 
-Open http://localhost:3000.
+Open https://ai-prodect-manager.vercel.app/
 
 ## Environment variables
 
